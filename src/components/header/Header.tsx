@@ -12,6 +12,9 @@ const Header: FC = () => {
             <Link href='/about'>
                 About Page
             </Link>
+            <Link href='/blog'>
+                Blog
+            </Link>
         </header>
     )
 }

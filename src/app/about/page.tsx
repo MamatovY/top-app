@@ -1,10 +1,15 @@
-import { NextPage } from 'next'
+import { Metadata, NextPage } from 'next'
+
+export const metadata: Metadata = {
+    title: 'About',
+    description: 'About Page',
+}
 
 const About: NextPage = () => {
     return (
-        <h2>
-            About page
-        </h2>
+        <h3>
+            Select sub item
+        </h3>
     )
 }
 
