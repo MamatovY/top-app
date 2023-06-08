@@ -1,3 +1,5 @@
+'use client'
+import { usePathname } from "next/navigation"
 import { Metadata } from "next"
 
 async function getData(id: string) {
@@ -28,7 +30,6 @@ export const generateMetadata = async ({
 
 const Post = async ({ params: { id } }: Props) => {
     const post = await getData(id)
-    console.log(post);
     return (
         <>
             <h1>
