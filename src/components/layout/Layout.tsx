@@ -4,6 +4,7 @@ import Header from './header/Header'
 const Layout: FC<PropsWithChildren<unknown>> = ({ children }) => {
     return (
         <div>
+            <Header />
             {children}
         </div>
     )

@@ -1,10 +1,12 @@
+'use client'
 import Link from 'next/link'
 import { FC } from 'react'
 import styles from './header.module.scss'
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 const Header: FC = () => {
-
+    const pathname = usePathname()
+    console.log(pathname);
     return (
         <header className={styles.header}>
             <Link href='/'>
