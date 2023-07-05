@@ -1,6 +1,5 @@
-import { FC } from 'react'
 
-const Footer: FC = () => {
+const Footer = () => {
     return (
         <footer className='container'>
             Created by &copy;MY

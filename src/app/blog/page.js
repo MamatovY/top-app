@@ -1,7 +1,6 @@
-import { Metadata, NextPage } from 'next'
 import Link from 'next/link'
 
-export const metadata: Metadata = {
+export const metadata = {
     title: 'Blog',
     description: 'Blog page',
 }
@@ -26,7 +25,7 @@ const Blog = async () => {
                 Blog
             </h2>
             <ul>
-                {posts.map((post: any) => {
+                {posts.map((post) => {
                     return (
                         <li key={post.id}>
                             <Link href={`/blog/${post.id}`}>
