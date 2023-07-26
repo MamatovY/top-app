@@ -11,14 +11,14 @@ async function getData() {
             revalidate: 60
         }
     })
-
     if (!response.ok) throw new Error('Unable to fetch posts!')
-
     return response.json()
 }
 
 const Blog = async () => {
+
     const posts = await getData()
+
     return (
         <>
             <h2>

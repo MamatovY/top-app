@@ -15,6 +15,7 @@ export const generateMetadata = async ({
     params: { id },
 }) => {
     const post = await getData(id)
+
     return {
         title: post.title
     }
@@ -22,6 +23,7 @@ export const generateMetadata = async ({
 
 const Post = async ({ params: { id } }) => {
     const post = await getData(id)
+    console.log(id);
     return (
         <>
             <h1>
