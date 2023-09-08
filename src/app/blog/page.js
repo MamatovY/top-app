@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Main from '../../components/main'
 
 export const metadata = {
     title: 'Blog',
@@ -20,7 +21,7 @@ const Blog = async () => {
     const posts = await getData()
 
     return (
-        <>
+        <Main>
             <h2>
                 Blog
             </h2>
@@ -35,7 +36,7 @@ const Blog = async () => {
                     )
                 })}
             </ul>
-        </>
+        </Main>
     )
 }
 

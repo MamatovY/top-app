@@ -6,7 +6,6 @@ import styles from './header.module.scss'
 const Header = () => {
     const pathname = usePathname()
 
-
     return (
         <header className={styles.header}>
             <Link href='/' className={pathname === '/' ? styles.active : ''} >
